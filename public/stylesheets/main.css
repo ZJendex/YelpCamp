@@ -8,3 +8,6 @@
 .delete-form{
     display: inline;
 }
+input{
+    width: 60%;
+}
