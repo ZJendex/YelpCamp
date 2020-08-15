@@ -52,7 +52,9 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 //connect/initialized the database  --adding options to avoid the errors
-mongoose.connect("mongodb://localhost:27017/yelp_camp_4", {useNewUrlParser: true, useUnifiedTopology: true});
+//mongoose.connect("mongodb://localhost:27017/yelp_camp_4", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://User1:111@clusterzj.wy4kz.mongodb.net/test?authSource=admin&replicaSet=atlas-pkmg0g-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true", {useNewUrlParser: true, useUnifiedTopology: true});
+
 //seedDB();
 
 app.use(indexRoutes);
