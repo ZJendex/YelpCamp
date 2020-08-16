@@ -51,8 +51,12 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-//set DATABASEURL locally REVEAL it when testing locally
-//process.env.DATABASEURL = "mongodb://localhost:27017/yelp_camp_4";
+//Check if DATABASEURL has been initialized in config vars in heroku (app deployed or not)
+//set DATABASEURL locally if it didn't
+if(!process.env.DATABASEURL){
+    process.env.DATABASEURL = "mongodb://localhost:27017/yelp_camp_4";
+}
+
 //connect/initialized the database  --adding options to avoid the errors
 mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useUnifiedTopology: true});
 // mongoose.connect("mongodb+srv://User1:111@clusterzj.wy4kz.mongodb.net/test?authSource=admin&replicaSet=atlas-pkmg0g-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true", {useNewUrlParser: true, useUnifiedTopology: true});
