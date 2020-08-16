@@ -51,9 +51,11 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+//make database address environment variable so that when deploying, we can change this variable to access different database
+process.env.DATABASEURL = "mongodb://localhost:27017/yelp_camp_4";
 //connect/initialized the database  --adding options to avoid the errors
-//mongoose.connect("mongodb://localhost:27017/yelp_camp_4", {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect("mongodb+srv://User1:111@clusterzj.wy4kz.mongodb.net/test?authSource=admin&replicaSet=atlas-pkmg0g-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useUnifiedTopology: true});
+// mongoose.connect("mongodb+srv://User1:111@clusterzj.wy4kz.mongodb.net/test?authSource=admin&replicaSet=atlas-pkmg0g-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true", {useNewUrlParser: true, useUnifiedTopology: true});
 
 //seedDB();
 
