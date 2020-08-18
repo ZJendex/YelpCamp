@@ -6,4 +6,8 @@
     * Adding price in Campground model
     * Adding input price in edit.ejs and create.ejs
     * Substitute the hard code price in show.ejs
+ 
+ * Add to git
+ * Create remote to heroku
+ * Deployed
     
