@@ -59,7 +59,8 @@ if(!process.env.DATABASEURL){
 
 //connect/initialized the database  --adding options to avoid the errors
 mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useUnifiedTopology: true});
-//none
+// mongoose.connect("mongodb+srv://User1:111@clusterzj.wy4kz.mongodb.net/test?authSource=admin&replicaSet=atlas-pkmg0g-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true", {useNewUrlParser: true, useUnifiedTopology: true});
+
 
 //seedDB();
 
