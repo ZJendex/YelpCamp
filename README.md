@@ -9,7 +9,7 @@ A full stack application build by myself from the course taught by Colt Steele.
 3. Authentication
 4. Authorization
 5. Flash Messages
-## Deployed on Heroku
+## Deployed on Heroku :rocket:
 https://yelpcampzj.herokuapp.com/
 
 
