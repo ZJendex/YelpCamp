@@ -9,6 +9,7 @@ A full stack application build by myself taught by Colt Steele.
 3. Authentication
 4. Authorization
 5. Flash Messages
+6. Responsive web design
 #### Dependencies
 >mongoose, express, ejs, passport, connect-flash, express-session, passport-local, passport-local-mongoose, body-parser, method-override
 ## Deployed on Heroku :rocket:
