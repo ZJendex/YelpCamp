@@ -1,15 +1,15 @@
-#YelpCamp
+# YelpCamp
 A full stack application build by myself from the course taught by Colt Steele.
 * Node JS v14.3.0
 * Express v4.17.1
 * MongoDB 
-##Features
+## Features
 1. RESTful API
 2. CRUD Operation
 3. Authentication
 4. Authorization
-4. Flash Messages
-##Deployed on Heroku
+5. Flash Messages
+## Deployed on Heroku
 https://yelpcampzj.herokuapp.com/
 
 
